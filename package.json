@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "heroku-prebuild": "npm ci && npm run build",
+    "heroku-prebuild": "npm ci --dev && npm run build",
     "start": "num run start",
     "sass": "node-sass -wr --source-map true ./style/main.scss ./style.css"
   },
