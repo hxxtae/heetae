@@ -1,0 +1,34 @@
+{
+  "name": "heetae",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "heroku-prebuild": "npm ci && npm run build",
+    "start": "num run start",
+    "sass": "node-sass -wr --source-map true ./style/main.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hxxtae/heetae.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hxxtae/heetae/issues"
+  },
+  "homepage": "https://github.com/hxxtae/heetae#readme",
+  "dependencies": {
+    "sass-lint": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^7.0.0",
+    "node-sass": "^7.0.1",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.45.2"
+  },
+  "description": ""
+}
