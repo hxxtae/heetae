@@ -1,0 +1,70 @@
+.message {
+  $popup-shadow: 0 4px 20px rgba(63, 65, 80, 0.3);
+
+  @include flexbox;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-25%);
+  
+  &-group {
+    @include column-flexbox;
+    position: relative;
+    transition: transform 200ms ease-in-out;
+    border: transparent;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: $popup-shadow;
+    background-color: #fff;
+    z-index: 1;
+
+    &:active,
+    &:hover {
+      transform: translateY(-30%);
+    }
+  }
+
+  &-title {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  &-description {
+    display: block;
+
+    span {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &-hidden {
+    @include flexbox;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-description {
+      span {
+        font-size: 36px;
+        font-weight: 500;
+        color: rgb(157, 157, 157);
+      }
+    }
+  }
+
+  @include mobile-only() {
+    &-hidden {
+      top: 59%;
+    }
+  }
+
+  @include responsive(D) {
+    height: 500px;
+  }
+
+  
+}

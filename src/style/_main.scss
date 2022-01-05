@@ -10,5 +10,8 @@
 @import './base/globals';
 
 @import './mixins/responsive';
+@import './mixins/flexbox';
+
+@import './components/message';
 
 @import './layouts/grids';
