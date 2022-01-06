@@ -7,6 +7,10 @@
   position: relative;
   top: 50%;
   transform: translateY(-25%);
+
+  &-box {
+    @include dragunable;
+  }
   
   &-group {
     @include column-flexbox;
