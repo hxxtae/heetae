@@ -80,4 +80,8 @@
       opacity: 0.5;
     }
   }
+
+  @include responsive(T) {
+    padding-top: 180px;
+  }
 }
