@@ -7,7 +7,7 @@
     "build": "parcel build index.html",
     "heroku-prebuild": "npm ci --dev && npm run build",
     "start": "num run start",
-    "sass": "node-sass -wr --source-map true ./style/main.scss ./style.css"
+    "sass": "node-sass -wr --source-map true ./src/style/main.scss ./style.css"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/hxxtae/heetae#readme",
   "dependencies": {
-    "sass-lint": "^1.13.1"
+    "sass-lint": "^1.13.1",
+    "update": "^0.7.4"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
