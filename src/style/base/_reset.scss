@@ -56,3 +56,9 @@ ol {
 address { 
   font-style: normal;
 }
+
+h1, h2, p {
+  &::selection {
+    background-color: $border;
+  }
+}
