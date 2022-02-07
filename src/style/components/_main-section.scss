@@ -1,11 +1,15 @@
+.main-show {
+  
+}
+
 .main-section {
   @include column-flexbox(start);
   min-height: 100vh;
   position: relative;
   
   .main-img {
-    height: 100vh;
     padding-top: $header-height;
+    height: 100vh;
 
     img {
       @include dragunable();
@@ -79,11 +83,9 @@
           &:last-child:after {
             display: none;
           }
-
         }
       }
     }
-    
   }
 
   @include responsive('T') {
@@ -91,12 +93,12 @@
 
     .main-img {
       height: auto;
-      padding-top: 0;
     }
 
     .main-data {
       flex-direction: row;
       bottom: auto;
+      padding-top: $header-height;
       
 
       .main-introduce {

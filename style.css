@@ -483,8 +483,8 @@ i {
   min-height: 100vh;
   position: relative; }
   .main-section .main-img {
-    height: 100vh;
-    padding-top: 64px; }
+    padding-top: 64px;
+    height: 100vh; }
     .main-section .main-img img {
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -545,11 +545,11 @@ i {
     .main-section {
       justify-content: center; }
       .main-section .main-img {
-        height: auto;
-        padding-top: 0; }
+        height: auto; }
       .main-section .main-data {
         flex-direction: row;
-        bottom: auto; }
+        bottom: auto;
+        padding-top: 64px; }
         .main-section .main-data .main-introduce {
           width: 300px; }
           .main-section .main-data .main-introduce p {
