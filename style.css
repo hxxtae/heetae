@@ -481,6 +481,7 @@ i {
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
+  margin: 0 -15px;
   position: relative; }
   .main-section .main-img {
     padding-top: 64px;
