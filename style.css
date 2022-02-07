@@ -354,6 +354,9 @@ ol {
 address {
   font-style: normal; }
 
+h1::selection, h2::selection, p::selection {
+  background-color: #E0E2E7; }
+
 @font-face {
   font-family: 'heetae';
   src: url("./src/assets/fonts/heetae.eot");
@@ -559,7 +562,8 @@ i {
           width: 300px;
           justify-content: flex-end; }
           .main-section .main-data .main-link ul li a {
-            color: #E0E2E7; }
+            color: #E0E2E7;
+            font-size: 16px; }
           .main-section .main-data .main-link ul li::after {
             border-color: #E0E2E7; } }
   @media screen and (min-width: 1200px) {
@@ -611,12 +615,76 @@ i {
         height: auto;
         padding-top: 0; }
         .header-menu-section .menu-list .menu-item {
+          align-items: center;
           padding: 0;
           padding-right: 20px; }
           .header-menu-section .menu-list .menu-item:hover {
             opacity: 0.4; }
           .header-menu-section .menu-list .menu-item:last-child {
             padding-right: 0; } }
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px; }
+  .about-section .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .about-section .about-description {
+      margin-bottom: 40px; }
+      .about-section .about-description h1 {
+        font-style: italic;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px; }
+      .about-section .about-description p {
+        font-size: 14px;
+        line-height: 30px; }
+        .about-section .about-description p + p {
+          margin-top: 40px; }
+    .about-section .about-skills h1 {
+      font-size: 28px;
+      font-family: "Russo One", sans-serif;
+      margin-bottom: 8px; }
+    .about-section .about-skills .skill-kind {
+      margin-bottom: 24px; }
+      .about-section .about-skills .skill-kind h2 {
+        font-size: 15px;
+        margin-bottom: 4px; }
+      .about-section .about-skills .skill-kind p {
+        font-size: 14px;
+        line-height: 30px;
+        color: #3186C4; }
+      .about-section .about-skills .skill-kind:last-child {
+        margin-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    .about-section .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .about-section .about-description {
+        margin-bottom: 60px; }
+        .about-section .about-description h1 {
+          font-size: 38px;
+          padding: 0 51px; }
+        .about-section .about-description p {
+          font-size: 17px; }
+      .about-section .about-skills h1 {
+        font-size: 35px;
+        margin-bottom: 10px; }
+      .about-section .about-skills .skill-kind {
+        margin-bottom: 30px; }
+        .about-section .about-skills .skill-kind h2 {
+          font-size: 19px; }
+        .about-section .about-skills .skill-kind p {
+          font-size: 17px; } }
+  @media screen and (min-width: 1200px) {
+    .about-section .about-description h1 {
+      padding: 0 140px; } }
 
 /*
  * MOBILE (<768px) ---------------------------------------
