@@ -1,5 +1,11 @@
 const header = document.querySelector('.header');
+const menuIcon = header.querySelector('.header-menu-button');
+const menuNav = document.querySelector('.header-menu-section');
 const menu = header.querySelector('.menu-list');
+
+function onClickMenuIcon(e) {
+  menuNav.classList.toggle('is-open');
+}
 
 function onClickMenu(e) {
   const target = e.target;
@@ -8,8 +14,9 @@ function onClickMenu(e) {
     
     switch (dataId.id) {
       case 'about':
-        const thisElement = document.querySelector('.main-show .about');
-        thisElement.scrollIntoView({behavior: "smooth", block: "start"});
+        const thisElement = document.querySelector('.main-show .about-section');
+        thisElement.scrollIntoView({ behavior: "smooth" });
+        menuNav.classList.remove('is-open');
         break;
       case 'work':
         break;
@@ -21,8 +28,10 @@ function onClickMenu(e) {
   }
 }
 
-function menuClick() {
-  menu.addEventListener('click', onClickMenu);
+export function menuIconClick() {
+  menuIcon.addEventListener('click', onClickMenuIcon);
 }
 
-export default menuClick;
+export function menuClick() {
+  menu.addEventListener('click', onClickMenu);
+}

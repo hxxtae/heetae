@@ -1,3 +1,4 @@
-import menuClick from './menuEvent.js';
+import { menuClick, menuIconClick } from './menuEvent.js';
 
 menuClick();
+menuIconClick();

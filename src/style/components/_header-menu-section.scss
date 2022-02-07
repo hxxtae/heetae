@@ -1,14 +1,14 @@
 .header-menu-section {
-  display: none;
   position: absolute;
-  top: -#{$header-menu-size};
+  top: ($header-height - 12px);
   right: 0;
   margin-right: -#{$gutter + $sm-margin};
   background-color: rgba($color: $white, $alpha: 0.7);
-  border-radius: 4px;
+  transform: translate3d(150px, 0, 0);
+  transition: transform 300ms ease-in-out;
 
   &.is-open {
-    display: block;
+    transform: translate3d(0, 0, 0);
   }
 
   .menu-list {
@@ -16,7 +16,7 @@
     align-items: flex-start;
     width: 150px;
     height: 100vh;
-    padding-top: $header-height;
+    
     
     .menu-item {
       @include flexbox();
@@ -42,6 +42,7 @@
     position: static;
     width: 100%;
     margin: auto;
+    transform: translate3d(0, 0, 0);
 
     .menu-list {
       flex-direction: row;
