@@ -546,16 +546,16 @@ i {
       justify-content: center; }
       .main-section .main-img {
         height: auto;
-        padding-top: auto; }
+        padding-top: 0; }
       .main-section .main-data {
         flex-direction: row;
         bottom: auto; }
         .main-section .main-data .main-introduce {
-          width: 280px; }
+          width: 300px; }
           .main-section .main-data .main-introduce p {
             color: #E0E2E7; }
         .main-section .main-data .main-link ul {
-          width: 280px;
+          width: 300px;
           justify-content: flex-end; }
           .main-section .main-data .main-link ul li a {
             color: #E0E2E7; }
@@ -573,7 +573,7 @@ i {
   top: -20px;
   right: 0;
   margin-right: -25px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 4px; }
   .header-menu-section.is-open {
     display: block; }
@@ -590,12 +590,11 @@ i {
       display: flex;
       justify-content: center;
       align-items: center;
+      align-items: flex-end;
       align-self: flex-end;
-      height: 55px;
+      height: 44px;
       padding-right: 30px; }
       .header-menu-section .menu-list .menu-item:active {
-        opacity: 0.4; }
-      .header-menu-section .menu-list .menu-item:hover {
         opacity: 0.4; }
       .header-menu-section .menu-list .menu-item button::selection {
         background-color: #E0E2E7; }
@@ -613,6 +612,8 @@ i {
         .header-menu-section .menu-list .menu-item {
           padding: 0;
           padding-right: 20px; }
+          .header-menu-section .menu-list .menu-item:hover {
+            opacity: 0.4; }
           .header-menu-section .menu-list .menu-item:last-child {
             padding-right: 0; } }
 
@@ -731,9 +732,13 @@ i {
   z-index: 100; }
   .header-menu {
     position: relative; }
-    .header-menu-button i {
-      font-size: 20px; }
-      .header-menu-button i:active {
+    .header-menu-button {
+      padding: 10px;
+      margin-right: -10px;
+      cursor: pointer; }
+      .header-menu-button i {
+        font-size: 20px; }
+      .header-menu-button:active {
         opacity: 0.4; }
   .header a {
     font-family: "Russo One", sans-serif;

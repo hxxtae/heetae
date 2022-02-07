@@ -9,20 +9,20 @@
   box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.8);
   z-index: $header-level;
 
-  &-title {
-    
-  }
-
   &-menu {
     position: relative;
 
     &-button {
+      padding: 10px;
+      margin-right: -10px;
+      cursor: pointer;
+
       i {
         font-size: $header-menu-size;
+      }
 
-        &:active {
-          opacity: 0.4;
-        }
+      &:active {
+        opacity: 0.4;
       }
     }
   }

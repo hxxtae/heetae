@@ -91,7 +91,7 @@
 
     .main-img {
       height: auto;
-      padding-top: auto;
+      padding-top: 0;
     }
 
     .main-data {
@@ -100,7 +100,7 @@
       
 
       .main-introduce {
-        width: 280px;
+        width: 300px;
 
         p {
           color: $border;
@@ -110,7 +110,7 @@
       .main-link {
 
         ul {
-          width: 280px;
+          width: 300px;
           justify-content: flex-end;
 
           li {

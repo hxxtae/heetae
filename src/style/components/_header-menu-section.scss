@@ -4,7 +4,7 @@
   top: -#{$header-menu-size};
   right: 0;
   margin-right: -#{$gutter + $sm-margin};
-  background-color: rgba($color: $white, $alpha: 0.8);
+  background-color: rgba($color: $white, $alpha: 0.7);
   border-radius: 4px;
 
   &.is-open {
@@ -19,16 +19,13 @@
     padding-top: $header-height;
     
     .menu-item {
-      @include flexbox(center);
+      @include flexbox();
+      align-items: flex-end;
       align-self: flex-end;
-      height: 55px;
+      height: 44px;
       padding-right: 30px;
 
       &:active {
-        opacity: 0.4;
-      }
-
-      &:hover {
         opacity: 0.4;
       }
 
@@ -56,12 +53,14 @@
         padding: 0;
         padding-right: 20px;
 
+        &:hover {
+          opacity: 0.4;
+        }
+
         &:last-child {
           padding-right: 0;
         }
-  
       }
     }
-  }
-  
+  }  
 }
