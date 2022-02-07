@@ -20,7 +20,7 @@
   .main-data {
     @include column-flexbox(center, start);
     position: absolute;
-    bottom: 48px;
+    bottom: 65px;
     
     .main-introduce {
       p {

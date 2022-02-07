@@ -341,6 +341,7 @@ textarea {
 
 button,
 a {
+  color: #3F4150;
   cursor: pointer; }
 
 button {
@@ -504,7 +505,7 @@ i {
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    bottom: 48px; }
+    bottom: 65px; }
     .main-section .main-data .main-introduce p {
       font-family: "Poppins", sans-serif;
       font-weight: 300;
