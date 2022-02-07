@@ -1,5 +1,5 @@
 AOS.init({
-  offset: 280,
+  offset: 300,
   useClassNames: true,
   duration: 1000,
   easing: `ease-in-out`,
