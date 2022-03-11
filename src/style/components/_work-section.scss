@@ -1,6 +1,7 @@
 .work-section {
   @include flexbox();
   padding: ($header-height + 20px) 20px $header-height;
+  margin-bottom: 50px;
 
   .work {
 
