@@ -1,0 +1,58 @@
+.work-section {
+  @include flexbox();
+  padding: ($header-height + 20px) 20px $header-height;
+
+  .work {
+
+    &-storys {
+      h1 {
+        font-size: 28px;
+        font-family: $font-header;
+        margin-bottom: 8px;
+      }
+
+      .story-kind {
+        margin-bottom: 24px;
+
+        h2 {
+          font-size: 15px;
+          margin-bottom: 4px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 30px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include responsive('T') {
+
+    .work {
+
+      &-storys {
+        h1 {
+          font-size: 35px;
+          margin-bottom: 10px;
+        }
+
+        .story-kind {
+          margin-bottom: 30px;
+
+          h2 {
+            font-size: 19px;
+          }
+
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}

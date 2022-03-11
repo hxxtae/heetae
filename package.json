@@ -6,7 +6,7 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html",
     "heroku-prebuild": "npm ci --dev && npm run build",
-    "start": "num run start",
+    "start": "parcel ./index.html",
     "sass": "node-sass -wr --source-map true ./src/style/main.scss ./style.css"
   },
   "repository": {

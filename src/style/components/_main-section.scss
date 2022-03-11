@@ -7,6 +7,7 @@
   .main-img {
     padding-top: $header-height;
     height: 100vh;
+    //height: calc(var(--vh, 1vh) * 100);
 
     img {
       @include dragunable();
