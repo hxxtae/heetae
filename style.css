@@ -908,13 +908,19 @@ i {
   .footer .links {
     font-size: 14px;
     margin-bottom: 0; }
+    .footer .links .link:after {
+      margin: 0 10px; }
+    .footer .links a::selection {
+      background-color: #E0E2E7; }
   .footer .contact {
     font-size: 14px;
     margin-bottom: 0; }
     .footer .contact .email {
       margin-bottom: 12px; }
     .footer .contact .tel {
-      margin-bottom: 12px; } }
+      margin-bottom: 12px; }
+    .footer .contact address::selection, .footer .contact a::selection {
+      background-color: #E0E2E7; } }
 
 .underline {
   border-bottom: 1px solid #191A20; }
