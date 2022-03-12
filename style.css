@@ -856,4 +856,67 @@ i {
     .header {
       padding: 0 255px; } }
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 48px 20px; }
+
+.footer .make-date {
+  font-size: 12px;
+  letter-spacing: 1px; }
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: .8px;
+  font-weight: 500;
+  margin-bottom: 20px; }
+  .footer .links .link:after {
+    content: '';
+    border-left: 1px solid #191A20;
+    margin: 0 5px; }
+  .footer .links .link:last-child:after {
+    border: none; }
+
+.footer .contact {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 300; }
+  .footer .contact li {
+    list-style: circle; }
+  .footer .contact .email {
+    letter-spacing: 1px;
+    margin-bottom: 10px; }
+  .footer .contact .tel {
+    letter-spacing: 0.7px;
+    margin-bottom: 10px; }
+  .footer .contact .address {
+    letter-spacing: 0.6px; }
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .footer .make-date {
+    font-size: 14px; }
+  .footer .links {
+    font-size: 14px;
+    margin-bottom: 0; }
+  .footer .contact {
+    font-size: 14px;
+    margin-bottom: 0; }
+    .footer .contact .email {
+      margin-bottom: 12px; }
+    .footer .contact .tel {
+      margin-bottom: 12px; } }
+
+.underline {
+  border-bottom: 1px solid #191A20; }
+
 /*# sourceMappingURL=style.css.map */

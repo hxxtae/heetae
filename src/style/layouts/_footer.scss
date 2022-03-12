@@ -1,0 +1,90 @@
+.footer {
+  
+  &-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 48px 20px;
+  }
+
+  .make-date {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: .8px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    .link {
+      &:after {
+        content:'';
+        border-left: 1px solid $dark;
+        margin: 0 5px;
+      }
+
+      &:last-child:after {
+        border: none;
+      }
+    }
+  }
+
+  .contact {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 300;
+
+    li {
+      list-style: circle;
+    }
+
+    .email {
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .tel {
+      letter-spacing: 0.7px;
+      margin-bottom: 10px;
+    }
+    .address {
+      letter-spacing: 0.6px;
+    }
+  }
+
+  @include responsive('T') {
+    &-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .make-date {
+      font-size: 14px;
+    }
+
+    .links {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .contact {
+      font-size: 14px;
+      margin-bottom: 0;
+  
+      .email {
+        margin-bottom: 12px;
+      }
+      .tel {
+        
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
