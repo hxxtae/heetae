@@ -925,4 +925,18 @@ i {
 .underline {
   border-bottom: 1px solid #191A20; }
 
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  max-height: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: black;
+  transition: opacity 500ms ease-in-out; }
+  .overlay.is-open {
+    max-height: 100vh;
+    opacity: .5; }
+
 /*# sourceMappingURL=style.css.map */
