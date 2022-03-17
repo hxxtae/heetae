@@ -44,14 +44,29 @@ function onClickMenu(e) {
   }
 }
 
+/**
+ * -----------------------------------
+ * 모바일 : 메뉴 아이콘 클릭 이벤트
+ * -----------------------------------
+ */
 export function menuIconClick() {
   menuIcon.addEventListener('click', onClickMenuIcon);
 }
 
+/**
+ * -----------------------------------
+ * 모바일 : overlay 화면 클릭 이벤트
+ * -----------------------------------
+ */
 export function overlayClick() {
   overlay.addEventListener('click', onClickOverlay);
 }
 
+/**
+ * -----------------------------------
+ * 전체 : 메뉴 클릭 이벤트
+ * -----------------------------------
+ */
 export function menuClick() {
   menu.addEventListener('click', onClickMenu);
 }
