@@ -538,7 +538,6 @@ i {
               background-color: #3F4150; }
           .main-section .main-data .main-link ul li::after {
             content: '';
-            display: inline-block;
             margin-right: 10px;
             border-left: 1px solid #3F4150;
             height: 12px; }
@@ -875,12 +874,17 @@ i {
   letter-spacing: .8px;
   font-weight: 500;
   margin-bottom: 20px; }
-  .footer .links .link:after {
-    content: '';
-    border-left: 1px solid #191A20;
-    margin: 0 5px; }
-  .footer .links .link:last-child:after {
-    border: none; }
+  .footer .links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .links .link:after {
+      content: '';
+      height: 15px;
+      margin: 0 5px;
+      border-left: 1px solid #191A20; }
+    .footer .links .link:last-child:after {
+      border: none; }
 
 .footer .contact {
   padding-left: 20px;

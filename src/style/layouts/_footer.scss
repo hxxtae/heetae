@@ -23,10 +23,14 @@
     margin-bottom: 20px;
 
     .link {
+      @include flexbox();
+
       &:after {
         content:'';
-        border-left: 1px solid $dark;
+        height: 15px;
         margin: 0 5px;
+        border-left: 1px solid $dark;
+
       }
 
       &:last-child:after {
