@@ -1,3 +1,6 @@
+// ------------------------
+// AOS Library
+// ------------------------
 AOS.init({
   offset: 300,
   useClassNames: true,
