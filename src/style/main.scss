@@ -13,6 +13,7 @@
 @import './mixins/responsive';
 @import './mixins/flexbox';
 @import './mixins/dragable';
+@import './mixins/scroll';
 
 @import './modules/icons';
 
@@ -20,6 +21,7 @@
 @import './components/header-menu-section';
 @import './components/about-section';
 @import './components/work-section';
+@import './components/project-section';
 
 @import './layouts/grids';
 @import './layouts/header';

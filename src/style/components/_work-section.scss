@@ -1,9 +1,9 @@
 .work-section {
   @include flexbox();
   padding: ($header-height + 20px) 20px $header-height;
-  margin-bottom: 50px;
 
   .work {
+    margin-right: auto;
 
     &-storys {
       h1 {
@@ -20,9 +20,26 @@
           margin-bottom: 4px;
         }
 
-        p {
-          font-size: 14px;
-          line-height: 30px;
+        ul {
+          margin-bottom: 10px;
+
+          p {
+            font-size: 14px;
+            line-height: 30px;
+          }
+
+          li {
+            text-indent: 10px;
+            line-height: 22px;
+
+            &::selection {
+              background-color: $border;
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
 
         &:last-child {
@@ -49,8 +66,12 @@
             font-size: 19px;
           }
 
-          p {
-            font-size: 17px;
+          ul {
+            margin-bottom: 20px;
+            
+            p {
+              font-size: 17px;
+            }
           }
         }
       }

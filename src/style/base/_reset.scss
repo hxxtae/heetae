@@ -15,6 +15,18 @@ body {
   font-family: $font-main;
   color: $primary;
   background-color: $neumor;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $tertiary;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 5px;
+  }
 }
 
 h1 {
@@ -58,7 +70,7 @@ address {
   font-style: normal;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
   &::selection {
     background-color: $border;
   }

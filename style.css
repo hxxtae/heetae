@@ -318,6 +318,14 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   color: #3F4150;
   background-color: #e7e7e7; }
+  body::-webkit-scrollbar {
+    width: 10px; }
+  body::-webkit-scrollbar-track {
+    background-color: #B2B3B9;
+    border-radius: 5px; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #3F4150;
+    border-radius: 5px; }
 
 h1 {
   margin: 0; }
@@ -355,7 +363,7 @@ ol {
 address {
   font-style: normal; }
 
-h1::selection, h2::selection, p::selection {
+h1::selection, h2::selection, h3::selection, p::selection {
   background-color: #E0E2E7; }
 
 @font-face {
@@ -690,22 +698,32 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 84px 20px 64px;
-  margin-bottom: 50px; }
-  .work-section .work-storys h1 {
-    font-size: 28px;
-    font-family: "Russo One", sans-serif;
-    margin-bottom: 8px; }
-  .work-section .work-storys .story-kind {
-    margin-bottom: 24px; }
-    .work-section .work-storys .story-kind h2 {
-      font-size: 15px;
-      margin-bottom: 4px; }
-    .work-section .work-storys .story-kind p {
-      font-size: 14px;
-      line-height: 30px; }
-    .work-section .work-storys .story-kind:last-child {
-      margin-bottom: 0; }
+  padding: 84px 20px 64px; }
+  .work-section .work {
+    margin-right: auto; }
+    .work-section .work-storys h1 {
+      font-size: 28px;
+      font-family: "Russo One", sans-serif;
+      margin-bottom: 8px; }
+    .work-section .work-storys .story-kind {
+      margin-bottom: 24px; }
+      .work-section .work-storys .story-kind h2 {
+        font-size: 15px;
+        margin-bottom: 4px; }
+      .work-section .work-storys .story-kind ul {
+        margin-bottom: 10px; }
+        .work-section .work-storys .story-kind ul p {
+          font-size: 14px;
+          line-height: 30px; }
+        .work-section .work-storys .story-kind ul li {
+          text-indent: 10px;
+          line-height: 22px; }
+          .work-section .work-storys .story-kind ul li::selection {
+            background-color: #E0E2E7; }
+        .work-section .work-storys .story-kind ul:last-child {
+          margin-bottom: 0; }
+      .work-section .work-storys .story-kind:last-child {
+        margin-bottom: 0; }
   @media screen and (min-width: 768px) {
     .work-section .work-storys h1 {
       font-size: 35px;
@@ -714,8 +732,54 @@ i {
       margin-bottom: 30px; }
       .work-section .work-storys .story-kind h2 {
         font-size: 19px; }
-      .work-section .work-storys .story-kind p {
-        font-size: 17px; } }
+      .work-section .work-storys .story-kind ul {
+        margin-bottom: 20px; }
+        .work-section .work-storys .story-kind ul p {
+          font-size: 17px; } }
+
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 84px 20px 64px;
+  margin-bottom: 50px; }
+  .project-section .project {
+    margin-right: auto; }
+    .project-section .project-cards h1 {
+      font-size: 28px;
+      font-family: "Russo One", sans-serif;
+      margin-bottom: 8px; }
+    .project-section .project-cards .card-kind h2 {
+      font-size: 15px;
+      margin-bottom: 4px; }
+    .project-section .project-cards .card-kind .card-content {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 200ms ease-in-out; }
+      .project-section .project-cards .card-kind .card-content a {
+        font-weight: 600;
+        margin-bottom: 10px; }
+        .project-section .project-cards .card-kind .card-content a::selection {
+          background-color: #E0E2E7; }
+      .project-section .project-cards .card-kind .card-content:hover {
+        transform: translateX(20px); }
+      .project-section .project-cards .card-kind .card-content p {
+        font-size: 14px;
+        color: #3186C4; }
+  @media screen and (min-width: 768px) {
+    .project-section .project-cards h1 {
+      font-size: 35px;
+      margin-bottom: 10px; }
+    .project-section .project-cards .card-kind {
+      margin-bottom: 30px; }
+      .project-section .project-cards .card-kind h2 {
+        font-size: 19px; }
+      .project-section .project-cards .card-kind .card-content {
+        font-size: 18px; } }
 
 /*
  * MOBILE (<768px) ---------------------------------------

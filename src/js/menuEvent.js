@@ -33,6 +33,10 @@ function onClickMenu(e) {
         overlay.classList.remove('is-open');
         break;
       case 'project':
+        const thisElement3 = document.querySelector('.main-show .project-section');
+        thisElement3.scrollIntoView({ behavior: "smooth" });
+        menuNav.classList.remove('is-open');
+        overlay.classList.remove('is-open');
         break;
       case 'contact':
         const thisElement4 = document.querySelector('.footer');

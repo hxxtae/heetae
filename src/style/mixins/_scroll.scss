@@ -1,0 +1,13 @@
+@mixin scroll-styled($width: 5px) {
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $primary;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+    border-radius: 5px;
+  }
+}

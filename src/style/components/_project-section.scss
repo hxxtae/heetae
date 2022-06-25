@@ -1,0 +1,80 @@
+.project-section {
+  @include flexbox();
+  padding: ($header-height + 20px) 20px $header-height;
+  margin-bottom: 50px;
+
+  .project {
+    margin-right: auto;
+
+    &-cards {
+      h1 {
+        font-size: 28px;
+        font-family: $font-header;
+        margin-bottom: 8px;
+      }
+
+      .card-kind {
+
+        h2 {
+          font-size: 15px;
+          margin-bottom: 4px;
+        }
+
+        .card-content {
+          @include flexbox('flex-start', 'flex-start');
+          flex-direction: column;
+          padding: 20px;
+          margin-top: 15px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+          transition: transform 200ms ease-in-out;
+
+          a {
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            &::selection {
+              background-color: $border;
+            }
+          }
+
+          &:hover {
+            transform: translateX(20px);
+          }
+
+          p {
+            font-size: 14px;
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive('T') {
+    .project {
+
+      &-cards {
+        h1 {
+          font-size: 35px;
+          margin-bottom: 10px;
+        }
+
+        .card-kind {
+          margin-bottom: 30px;
+
+          h2 {
+            font-size: 19px;
+          }
+
+          .card-content {
+            font-size: 18px;
+          }
+          
+        }
+      }
+    }
+
+
+  }
+}
