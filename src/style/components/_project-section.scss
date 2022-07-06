@@ -1,4 +1,4 @@
-.project-section {
+.project-section {  
   @include flexbox();
   padding: ($header-height + 20px) 20px $header-height;
   margin-bottom: 50px;
@@ -7,6 +7,11 @@
     margin-right: auto;
 
     &-cards {
+      
+      .card-wrapper {
+        @include column-flexbox(center, start);
+      }
+
       h1 {
         font-size: 28px;
         font-family: $font-header;
@@ -16,16 +21,13 @@
       .card-kind {
         margin-bottom: 20px;
 
-        &:first-child {
-          width: 300px;
-        }
-
         h2 {
           font-size: 15px;
           margin-bottom: 4px;
         }
 
         .card-content {
+          @include dragunable();
           @include flexbox(flex-start, flex-start);
           flex-direction: column;
           padding: 20px;
@@ -35,13 +37,13 @@
           transition: transform 200ms ease-in-out;
 
           div {
-            @include inline-flexbox();
+            @include flexbox();
           }
 
           a {
             font-weight: 600;
             margin-bottom: 10px;
-            width: 100%;
+            margin-right: auto;
 
             &::selection {
               background-color: $border;
@@ -87,6 +89,14 @@
 
           .card-content {
             font-size: 18px;
+
+            a {
+              transition: opacity 200ms ease-in-out;
+
+              &:hover {
+                opacity: .5;
+              }
+            }
           }
           
         }

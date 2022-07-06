@@ -321,7 +321,7 @@ body {
   body::-webkit-scrollbar {
     width: 10px; }
   body::-webkit-scrollbar-track {
-    background-color: #B2B3B9;
+    background-color: #e7e7e7;
     border-radius: 5px; }
   body::-webkit-scrollbar-thumb {
     background-color: #3F4150;
@@ -569,25 +569,30 @@ i {
         height: auto; }
       .main-section .main-data {
         flex-direction: row;
+        align-items: flex-end;
         bottom: auto;
         padding-top: 64px; }
         .main-section .main-data .main-introduce {
           width: 300px; }
           .main-section .main-data .main-introduce p {
             color: #E0E2E7; }
-        .main-section .main-data .main-link ul {
-          width: 300px;
-          justify-content: flex-end; }
-          .main-section .main-data .main-link ul li a {
-            color: #E0E2E7;
-            font-size: 16px; }
-          .main-section .main-data .main-link ul li::after {
-            border-color: #E0E2E7; } }
+        .main-section .main-data .main-link {
+          padding-top: 0; }
+          .main-section .main-data .main-link ul {
+            width: 300px;
+            justify-content: flex-end; }
+            .main-section .main-data .main-link ul li a {
+              color: #E0E2E7;
+              font-size: 14px; }
+            .main-section .main-data .main-link ul li::after {
+              border-color: #E0E2E7; } }
   @media screen and (min-width: 1200px) {
     .main-section .main-data .main-introduce {
       width: 380px; }
     .main-section .main-data .main-link ul {
-      width: 380px; } }
+      width: 380px; }
+      .main-section .main-data .main-link ul li a {
+        font-size: 16px; } }
 
 .header-menu-section {
   position: absolute;
@@ -635,6 +640,8 @@ i {
           align-items: center;
           padding: 0;
           padding-right: 20px; }
+          .header-menu-section .menu-list .menu-item button {
+            height: 100%; }
           .header-menu-section .menu-list .menu-item:hover {
             opacity: 0.4; }
           .header-menu-section .menu-list .menu-item:last-child {
@@ -757,18 +764,25 @@ i {
   margin-bottom: 50px; }
   .project-section .project {
     margin-right: auto; }
+    .project-section .project-cards .card-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
     .project-section .project-cards h1 {
       font-size: 28px;
       font-family: "Russo One", sans-serif;
       margin-bottom: 8px; }
     .project-section .project-cards .card-kind {
       margin-bottom: 20px; }
-      .project-section .project-cards .card-kind:first-child {
-        width: 300px; }
       .project-section .project-cards .card-kind h2 {
         font-size: 15px;
         margin-bottom: 4px; }
       .project-section .project-cards .card-kind .card-content {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         display: flex;
         flex-direction: column;
         padding: 20px;
@@ -777,13 +791,13 @@ i {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         transition: transform 200ms ease-in-out; }
         .project-section .project-cards .card-kind .card-content div {
-          display: inline-flex;
+          display: flex;
           justify-content: center;
           align-items: center; }
         .project-section .project-cards .card-kind .card-content a {
           font-weight: 600;
           margin-bottom: 10px;
-          width: 100%; }
+          margin-right: auto; }
           .project-section .project-cards .card-kind .card-content a::selection {
             background-color: #E0E2E7; }
         .project-section .project-cards .card-kind .card-content i {
@@ -804,7 +818,11 @@ i {
       .project-section .project-cards .card-kind h2 {
         font-size: 19px; }
       .project-section .project-cards .card-kind .card-content {
-        font-size: 18px; } }
+        font-size: 18px; }
+        .project-section .project-cards .card-kind .card-content a {
+          transition: opacity 200ms ease-in-out; }
+          .project-section .project-cards .card-kind .card-content a:hover {
+            opacity: .5; } }
 
 /*
  * MOBILE (<768px) ---------------------------------------

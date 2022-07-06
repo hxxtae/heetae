@@ -94,6 +94,7 @@
 
     .main-data {
       flex-direction: row;
+      align-items: flex-end;
       bottom: auto;
       padding-top: $header-height;
       
@@ -107,6 +108,7 @@
       }
 
       .main-link {
+        padding-top: 0;
 
         ul {
           width: 300px;
@@ -115,7 +117,7 @@
           li {
             a {
               color: $border;
-              font-size: 16px;
+              font-size: 14px;
             }
 
             &::after {
@@ -138,6 +140,12 @@
 
         ul {
           width: 380px;
+
+          li {
+            a {
+              font-size: 16px;
+            }
+          }
         }
       }
     }
