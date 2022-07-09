@@ -10,7 +10,8 @@
 
 ## Description
 
-- this is my portfolio web site.
+- 반응형 웹 개발. (그리드 시스템 적용)
+- 헤더구성 : About, Skill, Work, Project
 
 ## Stack
 
