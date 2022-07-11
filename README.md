@@ -12,6 +12,10 @@
 
 - 반응형 웹 개발. (그리드 시스템 적용)
 - 헤더구성 : About, Skill, Work, Project
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/79623316/178262740-c9e0dbd7-8712-40d8-958e-a005e26d3a02.png">
+</p>
+
 
 ## Stack
 
