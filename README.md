@@ -10,8 +10,14 @@
 
 ## Description
 
-- 반응형 웹 개발. (그리드 시스템 적용)
-- 헤더구성 : About, Skill, Work, Project
+- 개인 포트폴리오 웹사이트 입니다.
+- 반응형 웹 개발 및 그리드 시스템 적용
+- 목록 구성
+  - About : 나에 대한 소개 및 가치관에 대하여
+  - Skill : 나의 기술 스택
+  - Work : 나의 경력에 대한 간단한 소개
+  - Project : 내가 진행한 프로젝트에 대한 소개
+  
 <p align="left">
   <img src="https://user-images.githubusercontent.com/79623316/178262740-c9e0dbd7-8712-40d8-958e-a005e26d3a02.png">
 </p>
