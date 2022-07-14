@@ -1,4 +1,8 @@
 # This is My Portfolio Web site
+![languages-top](https://img.shields.io/github/languages/top/hxxtae/heetae?color=hotpink)
+![languages-count](https://img.shields.io/github/languages/count/hxxtae/heetae)
+![git-branch-checks](https://img.shields.io/github/checks-status/hxxtae/heetae/main?logo=github)
+![git-deployments](https://img.shields.io/github/deployments/hxxtae/heetae/heetae?logo=github)
 
 <p align="center">
   <br>
@@ -27,11 +31,12 @@
 
 | HTML    | CSS    | SCSS    | Parcel    |
 | :-----: | :----: | :-----: | :-------: |
-| ![html] | ![css] | ![scss] | ![parcel] |
+| ![html] | ![css] | ![scss] | <img src="https://parceljs.org/avatar.accb250e.png" style="width: 100px"> |
+
 
 ## License
 
-MIT &copy; [hxxtae](mailto:fkdlxmfkdl1@gmail.com)
+![hxx](https://img.shields.io/github/license/hxxtae/heetae?color=%23fff)
 
 [html]: https://user-images.githubusercontent.com/79623316/177504608-74a99b4c-d754-44a9-848d-6d83cf930b12.svg
 [css]: https://user-images.githubusercontent.com/79623316/177504549-f4a06403-79bc-4a28-9910-98ed15b19d34.svg
