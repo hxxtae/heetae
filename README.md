@@ -29,7 +29,7 @@
   - **Skill** : 나의 기술 스택
 
   - **Work** : 나의 경력에 대한 간단한 소개
-  
+
   - **Project** : 내가 진행한 프로젝트에 대한 소개
   
 <p align="left">
@@ -57,4 +57,4 @@
 <br/>
 <br/>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=e7e7e7&height=200&text=Hxxtae.&fontSize=14&fontAlign=93&fontAlignY=80&section=footer)
