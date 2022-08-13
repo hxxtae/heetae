@@ -2,12 +2,11 @@
   "name": "heetae",
   "description": "hxxtae portfolio website ",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html",
     "heroku-prebuild": "npm ci --dev && npm run build",
-    "start": "parcel ./index.html",
+    "rm_dist": "rm -rf dist",
+    "dev": "npm run rm_dist && parcel index.html -d dist",
+    "build": "npm run rm_dist && parcel build index.html --public-url ././",
     "sass": "node-sass -wr --source-map true ./src/style/main.scss ./style.css"
   },
   "repository": {
@@ -20,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/hxxtae/heetae/issues"
   },
-  "homepage": "https://github.com/hxxtae/heetae#readme",
   "dependencies": {
     "sass-lint": "^1.13.1",
     "update": "^0.7.4"
@@ -31,5 +29,6 @@
     "node-sass": "^7.0.1",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.45.2"
-  }
+  },
+  "homepage": "https://github.com/hxxtae/heetae"
 }
