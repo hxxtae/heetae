@@ -1,14 +1,3 @@
-# Hxxtae - My Portfolio Web site.
-
-![git-code-size](https://img.shields.io/github/languages/code-size/hxxtae/heetae?color=%23&logo=github)
-![git-repo-size](https://img.shields.io/github/repo-size/hxxtae/heetae?color=%23&logo=github)
-![git-last-commit](https://img.shields.io/github/last-commit/hxxtae/heetae?color=%23e7e7e7&logo=github)
-![git-branch-check-state](https://img.shields.io/github/checks-status/hxxtae/heetae/main?label=main&logo=github)
-![git-deployments](https://img.shields.io/github/deployments/hxxtae/heetae/heetae?logo=github&label=deploy-state)   
-![git-top-language](https://img.shields.io/github/languages/top/hxxtae/heetae?color=hotpink)
-![git-language-count](https://img.shields.io/github/languages/count/hxxtae/heetae)
-![git-repo-file-count](https://img.shields.io/github/directory-file-count/hxxtae/heetae)   
-
 <p align="center">
   <br>
   <img src="https://user-images.githubusercontent.com/79623316/177762683-bb7e8b80-31ae-4d0c-8ac5-2d771baf4eb6.svg">
@@ -16,6 +5,24 @@
   <img src="https://user-images.githubusercontent.com/79623316/177762203-024671da-e675-41f5-bb2b-a53155eb8020.svg">
   <br>
 </p>
+
+<p align="center">
+  Hxxtae - Heetae's portfolio website.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/languages/code-size/hxxtae/heetae?color=%23&logo=github" alt="git-code-size">
+  <img src="https://img.shields.io/github/repo-size/hxxtae/heetae?color=%23&logo=github" alt="git-repo-size">
+  <img src="https://img.shields.io/github/last-commit/hxxtae/heetae?color=%23e7e7e7&logo=github" alt="git-last-commit">
+  <img src="https://img.shields.io/github/checks-status/hxxtae/heetae/main?label=main&logo=github" alt="git-branch-check-state">
+  <img src="https://img.shields.io/github/deployments/hxxtae/heetae/heetae?logo=github&label=deploy-state" alt="git-deployments">
+  <br>
+  <img src="https://img.shields.io/github/languages/top/hxxtae/heetae?color=hotpink" alt="git-top-language">
+  <img src="https://img.shields.io/github/languages/count/hxxtae/heetae" alt="git-language-count">
+  <img src="https://img.shields.io/github/directory-file-count/hxxtae/heetae" alt="git-repo-file-count">
+</p>
+
+<br>
 
 ## Description
 
@@ -31,11 +38,16 @@
   - **Work** : 나의 경력에 대한 간단한 소개
 
   - **Project** : 내가 진행한 프로젝트에 대한 소개
-  
+
+<br>
+
+## Preview
+
 <p align="left">
   <img src="https://user-images.githubusercontent.com/79623316/178262740-c9e0dbd7-8712-40d8-958e-a005e26d3a02.png">
 </p>
 
+<br>
 
 ## Stack
 
@@ -43,6 +55,7 @@
 | :-----: | :----: | :-----: | :-------: |
 | ![html] | ![css] | ![scss] | <img src="https://parceljs.org/avatar.accb250e.png" style="width: 100px"> |
 
+<br>
 
 ## License
 
