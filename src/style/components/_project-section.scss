@@ -29,41 +29,73 @@
           @include dragunable();
           @include flexbox(flex-start, flex-start);
           flex-direction: column;
-          padding: 20px;
           margin-top: 15px;
           border-radius: 5px;
           box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-          transition: transform 200ms ease-in-out;
+          transition: background-color 400ms ease-in-out;
 
-          div {
-            @include flexbox();
-          }
+          &-img {
 
-          a {
-            font-weight: 600;
-            margin-bottom: 10px;
-            margin-right: auto;
-
-            &::selection {
-              background-color: $border;
+            img {
+              display: block;
+              width: 100%;
+              object-fit: cover;
             }
           }
 
-          i {
-            margin-right: 10px;
+          &-desc {
+            @include flexbox(flex-start, flex-start);
+            flex-direction: column;
+            width: 100%;
+            padding: 20px 15px;
+            background-color: $neumor;
+          }
 
-            &:last-child {
-              margin-right: 0;
+          .wrapper {
+            @include flexbox();
+
+            h3 {
+              font-weight: 600;
+              margin-bottom: 10px;
+              margin-right: auto;
+  
+              &::selection {
+                background-color: $border;
+              }
+            }
+
+            i {
+              margin-right: 10px;
+  
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+
+          .package {
+            font-size: 14px;
+            color: $blue-dark;
+          }
+
+          .link {
+            @include flexbox(flex-start, center);
+            margin-top: 20px;
+            color: $primary;
+
+            i {
+              font-size: 16px;
+              margin-right: 5px;
+            }
+
+            p {
+              @include line-clamp(1);
+              font-size: 12px;
             }
           }
 
           &:hover {
-            transform: translateX(20px);
-          }
-
-          p {
-            font-size: 14px;
-            color: $blue-dark;
+            background-color: $black;
           }
         }
       }
@@ -87,21 +119,28 @@
           }
 
           .card-content {
+            width: 650px;
             font-size: 18px;
+            flex-direction: row;
 
-            a {
-              transition: opacity 200ms ease-in-out;
+            &-img {
 
-              &:hover {
-                opacity: .5;
+              img {
+                width: 250px;
               }
+            }
+
+            &-desc {
+              padding: 20px;
+            }
+
+            .link {
+              margin-top: auto;
             }
           }
           
         }
       }
     }
-
-
   }
 }

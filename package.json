@@ -1,7 +1,7 @@
 {
   "name": "heetae",
   "description": "hxxtae portfolio website ",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "scripts": {
     "heroku-prebuild": "npm ci --dev && npm run build",
     "rm_dist": "rm -rf dist",
@@ -29,6 +29,5 @@
     "node-sass": "^7.0.1",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.45.2"
-  },
-  "homepage": "https://github.com/hxxtae/heetae"
+  }
 }

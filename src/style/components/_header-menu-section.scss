@@ -3,7 +3,7 @@
   top: ($header-height - 12px);
   right: 0;
   margin-right: -#{$gutter + $sm-margin};
-  background-color: rgba($color: $white, $alpha: 0.7);
+  background-color: rgba($color: $white, $alpha: .8);
   transform: translate3d(150px, 0, 0);
   transition: transform 300ms ease-in-out;
 
@@ -16,7 +16,6 @@
     align-items: flex-start;
     width: 150px;
     height: 100vh;
-    
     
     .menu-item {
       @include flexbox();

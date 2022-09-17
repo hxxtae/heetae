@@ -599,7 +599,7 @@ i {
   top: 52px;
   right: 0;
   margin-right: -25px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   transform: translate3d(150px, 0, 0);
   transition: transform 300ms ease-in-out; }
   .header-menu-section.is-open {
@@ -784,30 +784,53 @@ i {
         user-select: none;
         display: flex;
         flex-direction: column;
-        padding: 20px;
         margin-top: 15px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        transition: transform 200ms ease-in-out; }
-        .project-section .project-cards .card-kind .card-content div {
+        transition: background-color 400ms ease-in-out; }
+        .project-section .project-cards .card-kind .card-content-img img {
+          display: block;
+          width: 100%;
+          object-fit: cover; }
+        .project-section .project-cards .card-kind .card-content-desc {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 20px 15px;
+          background-color: #e7e7e7; }
+        .project-section .project-cards .card-kind .card-content .wrapper {
           display: flex;
           justify-content: center;
           align-items: center; }
-        .project-section .project-cards .card-kind .card-content a {
-          font-weight: 600;
-          margin-bottom: 10px;
-          margin-right: auto; }
-          .project-section .project-cards .card-kind .card-content a::selection {
-            background-color: #E0E2E7; }
-        .project-section .project-cards .card-kind .card-content i {
-          margin-right: 10px; }
-          .project-section .project-cards .card-kind .card-content i:last-child {
-            margin-right: 0; }
-        .project-section .project-cards .card-kind .card-content:hover {
-          transform: translateX(20px); }
-        .project-section .project-cards .card-kind .card-content p {
+          .project-section .project-cards .card-kind .card-content .wrapper h3 {
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-right: auto; }
+            .project-section .project-cards .card-kind .card-content .wrapper h3::selection {
+              background-color: #E0E2E7; }
+          .project-section .project-cards .card-kind .card-content .wrapper i {
+            margin-right: 10px; }
+            .project-section .project-cards .card-kind .card-content .wrapper i:last-child {
+              margin-right: 0; }
+        .project-section .project-cards .card-kind .card-content .package {
           font-size: 14px;
           color: #3186C4; }
+        .project-section .project-cards .card-kind .card-content .link {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          color: #3F4150; }
+          .project-section .project-cards .card-kind .card-content .link i {
+            font-size: 16px;
+            margin-right: 5px; }
+          .project-section .project-cards .card-kind .card-content .link p {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 12px; }
+        .project-section .project-cards .card-kind .card-content:hover {
+          background-color: #000; }
   @media screen and (min-width: 768px) {
     .project-section .project-cards h1 {
       font-size: 35px;
@@ -817,11 +840,15 @@ i {
       .project-section .project-cards .card-kind h2 {
         font-size: 19px; }
       .project-section .project-cards .card-kind .card-content {
-        font-size: 18px; }
-        .project-section .project-cards .card-kind .card-content a {
-          transition: opacity 200ms ease-in-out; }
-          .project-section .project-cards .card-kind .card-content a:hover {
-            opacity: .5; } }
+        width: 650px;
+        font-size: 18px;
+        flex-direction: row; }
+        .project-section .project-cards .card-kind .card-content-img img {
+          width: 250px; }
+        .project-section .project-cards .card-kind .card-content-desc {
+          padding: 20px; }
+        .project-section .project-cards .card-kind .card-content .link {
+          margin-top: auto; } }
 
 .anyothers-section {
   padding: 20px;
