@@ -787,13 +787,15 @@ i {
         margin-top: 15px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        transition: background-color 400ms ease-in-out; }
+        transition: background-color 400ms ease-in-out;
+        overflow: hidden; }
         .project-section .project-cards .card-kind .card-content-img img {
           display: block;
           width: 100%;
           object-fit: cover; }
         .project-section .project-cards .card-kind .card-content-desc {
           display: flex;
+          align-items: stretch;
           flex-direction: column;
           width: 100%;
           padding: 20px 15px;

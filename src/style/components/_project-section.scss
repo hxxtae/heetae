@@ -33,6 +33,7 @@
           border-radius: 5px;
           box-shadow: 0 0 10px rgba(0, 0, 0, .3);
           transition: background-color 400ms ease-in-out;
+          overflow: hidden;
 
           &-img {
 
@@ -44,7 +45,7 @@
           }
 
           &-desc {
-            @include flexbox(flex-start, flex-start);
+            @include flexbox(flex-start, stretch);
             flex-direction: column;
             width: 100%;
             padding: 20px 15px;
@@ -124,7 +125,7 @@
             flex-direction: row;
 
             &-img {
-
+              
               img {
                 width: 250px;
               }
