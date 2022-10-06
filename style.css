@@ -734,7 +734,8 @@ i {
         .work-section .work-storys .story-kind ul li {
           font-size: 14px;
           text-indent: 10px;
-          line-height: 22px; }
+          line-height: 22px;
+          color: #8C8D96; }
           .work-section .work-storys .story-kind ul li::selection {
             background-color: #E0E2E7; }
         .work-section .work-storys .story-kind ul:last-child {

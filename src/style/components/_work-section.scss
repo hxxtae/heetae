@@ -32,6 +32,7 @@
             font-size: 14px;
             text-indent: 10px;
             line-height: 22px;
+            color: $secondary;
 
             &::selection {
               background-color: $border;
