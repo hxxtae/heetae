@@ -1,0 +1,50 @@
+.algorithm-section {
+  @include flexbox();
+  padding: ($header-height + 20px) 20px $header-height;
+
+  .algorithm {
+    margin-right: auto;
+
+    h1 {
+      font-size: 28px;
+      font-family: $font-header;
+      margin-bottom: 8px;
+    }
+
+    &-kind {
+      margin-bottom: 24px;
+    }
+
+    &-title {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    &-count, &-level {
+      font-size: 14px;
+      line-height: 30px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include responsive('T') {
+
+    .algorithm {
+      h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+
+      &-title {
+        font-size: 19px;
+      }
+
+      &-count, &-level {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,8 +1,5 @@
-import { menuClick, menuIconClick, overlayClick } from './menuEvent.js';
-
-menuClick();
-menuIconClick();
-overlayClick();
+import './menuEvent.js';
+import './api.js';
 
 const name = "'Hxxtae'";
 console.log(' %c /* Welcome to the %c%s%c website */ ', `
