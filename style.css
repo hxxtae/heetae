@@ -1054,7 +1054,8 @@ i {
       margin: 0 5px;
       border-left: 1px solid #191A20; }
     .footer .links .link:last-child:after {
-      border: none; }
+      border: none;
+      margin: 0; }
 
 .footer .contact {
   padding-left: 20px;
@@ -1081,7 +1082,8 @@ i {
     font-size: 14px; }
   .footer .links {
     font-size: 14px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    justify-content: center; }
     .footer .links .link:after {
       margin: 0 10px; }
     .footer .links a::selection {
