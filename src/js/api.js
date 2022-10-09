@@ -1,6 +1,8 @@
 import 'regenerator-runtime/runtime';
+import { rankFormat } from './util';
 
-const BAEKJOON_API_PATH = 'https://solved.ac/api/v3/user/problem_stats?handle=fkdlxmfkdl1';
+const BAEKJOON_EXAM_PATH = 'https://solved.ac/api/v3/user/problem_stats?handle=fkdlxmfkdl1';
+const BAEKJOON_USER_PATH = 'https://solved.ac/api/v3/search/user?query=fkdlxmfkdl1&page=1';
 
 /**
  * Response object (사용자가 푼 문제 개수 수준별로 가져오기)
@@ -14,11 +16,11 @@ const BAEKJOON_API_PATH = 'https://solved.ac/api/v3/user/problem_stats?handle=fk
  */
 
 /**
- * Response
+ * Response 1
  * @return { Promise<number> } solved - 푼 문제 수
  */
-const baekjoonApi = async () => {
-  const data = await fetch(BAEKJOON_API_PATH, {
+const baekjoonExamApi = async () => {
+  const data = await fetch(BAEKJOON_EXAM_PATH, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -28,10 +30,30 @@ const baekjoonApi = async () => {
   return data.reduce((prev, curr) => prev + curr['solved'], 0);
 };
 
-const paintCount = async () => {
-  const data = await baekjoonApi();
-  const result = data ? data : '❔';
-  document.querySelector('.algorithm-count span').append(result);
+/**
+ * Response 2
+ * @returns { Promise<any> } userObject - 사용자 검색 데이터
+ */
+const baekjoonUserApi = async () => {
+  const data = await fetch(BAEKJOON_USER_PATH, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }).then((response) => response.json());
+
+  const { count, items } = data;
+  return items[0];
 }
 
-paintCount();
+const paintData = async () => {
+  const user = await baekjoonUserApi();
+  if (user.constructor !== Object || Object.keys(user).length < 1) {
+    throw Error("'user' is not an Object");
+  }
+  const { solvedCount, tier } = user;
+  document.querySelector('.algorithm-count span').append(solvedCount || '❔');
+  document.querySelector('.algorithm-level span').append(rankFormat(tier) || '❔');
+}
+
+paintData();

@@ -733,7 +733,6 @@ i {
           line-height: 30px; }
         .work-section .work-storys .story-kind ul li {
           font-size: 14px;
-          text-indent: 10px;
           line-height: 22px;
           color: #8C8D96; }
           .work-section .work-storys .story-kind ul li::selection {
@@ -857,6 +856,36 @@ i {
   padding: 20px;
   text-align: center;
   margin-bottom: 50px; }
+
+.algorithm-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 84px 20px 64px; }
+  .algorithm-section .algorithm {
+    margin-right: auto; }
+    .algorithm-section .algorithm h1 {
+      font-size: 28px;
+      font-family: "Russo One", sans-serif;
+      margin-bottom: 8px; }
+    .algorithm-section .algorithm-kind {
+      margin-bottom: 24px; }
+    .algorithm-section .algorithm-title {
+      font-size: 15px;
+      margin-bottom: 4px; }
+    .algorithm-section .algorithm-count, .algorithm-section .algorithm-level {
+      font-size: 14px;
+      line-height: 30px; }
+      .algorithm-section .algorithm-count span, .algorithm-section .algorithm-level span {
+        font-size: 16px; }
+  @media screen and (min-width: 768px) {
+    .algorithm-section .algorithm h1 {
+      font-size: 35px;
+      margin-bottom: 10px; }
+    .algorithm-section .algorithm-title {
+      font-size: 19px; }
+    .algorithm-section .algorithm-count, .algorithm-section .algorithm-level {
+      font-size: 16px; } }
 
 /*
  * MOBILE (<768px) ---------------------------------------
