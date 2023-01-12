@@ -1,6 +1,6 @@
 {
   "name": "heetae",
-  "description": "hxxtae portfolio website ",
+  "description": "heetae portfolio website ",
   "version": "1.2.0",
   "scripts": {
     "heroku-prebuild": "npm ci --dev && npm run build",

@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Hxxtae - Heetae's portfolio website.
+  Heetae - Heetae's portfolio website.
 </p>
 
 <p align="center">

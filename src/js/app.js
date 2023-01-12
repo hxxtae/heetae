@@ -1,7 +1,7 @@
 import './menuEvent.js';
 import './api.js';
 
-const name = "'Hxxtae'";
+const name = "'Heetae'";
 console.log(' %c /* Welcome to the %c%s%c website */ ', `
   color: #e7e7e7; 
   background-color: black;
