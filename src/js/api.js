@@ -38,18 +38,19 @@ const baekjoonUserApi = async () => {
   const data = await fetch(BAEKJOON_USER_PATH, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     }
-  }).then((response) => response.json());
-
+  }).then((response) => response.json())
+    .catch((e) => console.error(`백준 API요청 에러: ${e.message}`));
+  
   const { count, items } = data;
   return items[0];
 }
 
 const paintData = async () => {
   const user = await baekjoonUserApi();
-  if (user.constructor !== Object || Object.keys(user).length < 1) {
-    throw Error("'user' is not an Object");
+  if (user?.constructor !== Object || Object.keys(user)?.length < 1) {
+    throw new Error("'user' is not an Object");
   }
   const { solvedCount, tier } = user;
   document.querySelector('.algorithm-count span').append(solvedCount || '❔');
