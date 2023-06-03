@@ -1,3 +1,9 @@
+/*
+----------------------------
+  현재 사용하지 않음 
+----------------------------
+*/
+
 import 'regenerator-runtime/runtime';
 import { rankFormat } from './util';
 
@@ -57,4 +63,3 @@ const paintData = async () => {
   document.querySelector('.algorithm-level span').append(rankFormat(tier) || '❔');
 }
 
-paintData();

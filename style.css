@@ -733,10 +733,16 @@ i {
           line-height: 30px; }
         .work-section .work-storys .story-kind ul li {
           font-size: 14px;
+          text-indent: 10px;
+          list-style: inside;
           line-height: 22px;
           color: #8C8D96; }
           .work-section .work-storys .story-kind ul li::selection {
             background-color: #E0E2E7; }
+          .work-section .work-storys .story-kind ul li a {
+            color: #3186C4; }
+          .work-section .work-storys .story-kind ul li a:hover {
+            opacity: .7; }
         .work-section .work-storys .story-kind ul:last-child {
           margin-bottom: 0; }
       .work-section .work-storys .story-kind:last-child {
@@ -1030,7 +1036,7 @@ i {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 48px 20px; }
+  padding: 88px 20px; }
 
 .footer .make-date {
   font-size: 12px;

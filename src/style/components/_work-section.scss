@@ -30,12 +30,20 @@
 
           li {
             font-size: 14px;
-            // text-indent: 10px;
+            text-indent: 10px;
+            list-style: inside;
             line-height: 22px;
             color: $secondary;
 
             &::selection {
               background-color: $border;
+            }
+
+            a {
+              color: $blue-dark;
+            }
+            a:hover {
+              opacity: .7;
             }
           }
 
