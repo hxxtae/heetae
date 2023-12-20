@@ -57,6 +57,25 @@
 
 <br>
 
+## heetae development environment
+
+### node.js
+```text
+v16.20.2
+```
+
+### Supported Environments of Sass
+
+| OS           | Architecture | Node           |
+| ------------ | ------------ | -------------- |
+| Windows      | x86& x64     | 12, 14, 16, 17 |
+| OSX	          | x64          | 12, 14, 16, 17 |
+| Linux*       | x64          | 12, 14, 16, 17 |
+| Alpine Linux | x64          | 12, 14, 16, 17 |
+| FreeBSD      | i386 amd64   | 12, 14         |
+
+ref: https://github.com/sass/node-sass/releases/tag/v7.0.1
+
 ## License
 
 ![hxx](https://img.shields.io/github/license/hxxtae/heetae?color=%23fff)
